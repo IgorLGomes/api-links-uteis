@@ -7,7 +7,7 @@ WORKDIR /app
 # Copia todo o código para dentro do container
 COPY . .
 
-# Compila e gera o JAR (pula   testes para acelerar)
+# Compila e gera o JAR (pula testes para acelerar)
 RUN mvn clean package -DskipTests
 
 # === STAGE 2: RUNTIME ===
